@@ -1,9 +1,18 @@
+var x = "";
+var title = "";
+var todos = [];
+var todoKeys = [];
+var userUID = "";
+var userName = "";
+
 auth.onAuthStateChanged((user) => {
   if (user) {
-    console.log("user is signed in at users.html");
+    console.log("user is signed in at Todo");
+    userUID = user.uid;
+    getTodos(user.uid);
   } else {
     alert(
-      "your login session has expired or you have logged out, login again to continue"
+      "Your login session has expired or you have logged out, login again to continue"
     );
     location = "../index.html";
   }
@@ -24,41 +33,122 @@ auth.onAuthStateChanged((user) => {
   }
 });
 
-arr = [];
-var btn_add = document.getElementById("additem");
-var btn_delete = document.getElementById("deleted");
+function addTodo(ev) {
+  ev.preventDefault();
+  x = document.getElementById("text-feild").value;
+  title = document.getElementById("get-title").value;
 
-function get_update() {
-  let title = document.getElementById("title").value;
-  let desc = document.getElementById("description").value;
-  arr.push([title, desc]);
-  update();
+  var date = new Date().toLocaleDateString();
+  // var uid = Date.now().toString(36) + Math.random().toString(36).substr(2)
+  var todo = {
+    item: x,
+    date: date,
+    title: title,
+    uid: userUID,
+    // uid: uid
+  };
+  // saving to db
+  var db = firebase.firestore().collection(`todos`);
+  db.add(todo)
+    .then(() => {
+      console.log("todo added!");
+      getTodos(userUID);
+    })
+    .catch((error) => {
+      console.error("Error adding document: ", error);
+    });
+  return false;
 }
 
-function update() {
-  str = "";
-  arr.forEach((element, index) => {
-    str =
-      str +
-      `<tr>
-        <th scope="row">${index + 1}</th>
-        <td>${element[0]}</td>
-        <td>${element[1]}</td>
-        <td><button type="submit" onclick="deleted(${index})" class="btn btn-outline-danger btn-rounded waves-effect"
-        >
-          Delete &nbsp; &nbsp;<i class="fas fa-trash pr-2"></i>
-        </button></td>
-        </tr>`;
-  });
-  document.getElementById("tableBody").innerHTML = str;
+function resetValues() {
+  document.getElementById("text-feild").value = "";
+  document.getElementById("get-title").value = "";
+  x = "";
+  title = "";
 }
 
-function deleted(item_index) {
-  arr.splice(item_index, 1);
-  console.log(arr);
-  update();
+function remove(index) {
+  document.getElementById("table-body").innerHTML = "";
+  var key = todoKeys[index];
+  firebase
+    .firestore()
+    .collection("todos")
+    .doc(key)
+    .delete()
+    .then(() => {
+      // todos = []
+      getTodos(userUID);
+      console.log("Document successfully deleted!");
+    })
+    .catch((error) => {
+      console.error("Error removing document: ", error);
+    });
 }
 
-btn_add.addEventListener("click", () => {
-  get_update();
-});
+function clear() {
+  todos = [];
+  document.getElementById("table-body").innerHTML = " ";
+  return false;
+}
+
+function logout() {
+  firebase
+    .auth()
+    .signOut()
+    .then(() => {
+      location.href = "../index.html";
+    })
+    .catch((error) => {
+      // An error happened.
+    });
+  return false;
+}
+
+function getTodos(userUID) {
+  todos = [];
+  todoKeys = [];
+  var docRef = firebase
+    .firestore()
+    .collection("todos")
+    .where("uid", "==", userUID);
+
+  docRef
+    .get()
+    .then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        todos.push(doc.data());
+        todoKeys.push(doc.id);
+        document.getElementById("table-body").innerHTML = "";
+        todos.forEach((item, index) => {
+          document.getElementById("table-body").innerHTML += `
+
+        <tr>
+          <td>
+            ${index + 1}
+          </td>
+          <td>
+            ${item.title}
+          </td>
+          <td>
+            ${item.item}
+          </td>
+          <td>
+            ${item.date}
+          </td>
+          <td>
+            <button onclick="remove(${index})"  class="btn btn-outline-danger btn-rounded waves-effect"
+            >
+              Delete &nbsp; &nbsp;<i class="fas fa-trash pr-2"></i>
+            </button></td> 
+        </tr>
+
+
+        `;
+        });
+        resetValues();
+      });
+    })
+    .catch((error) => {
+      console.log("Error getting documents: ", error);
+    });
+}

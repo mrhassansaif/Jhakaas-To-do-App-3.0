@@ -219,7 +219,7 @@ let login = (event) => {
           icon: "success",
           button: "Okay!",
         }).then((value) => {
-          location.href = "../Jhakaas-To-do-App-main/index.html";
+          location.href = "./Jhakaas-To-do-App-main/index.html";
         });
 
         // ...

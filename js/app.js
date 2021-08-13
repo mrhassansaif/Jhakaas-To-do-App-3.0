@@ -1,1 +1,241 @@
-function _0x5ac2(){var _0x3bcd37=['userFullName','match','createUserWithEmailAndPassword','then','href','userSIEmailError','339976EPzDMB','none','log','user\x20:','1564920qADICZ','success','userSIPassword','userSurname','Login\x20Done','userEmailError','Okay!','7014411wdqZMC','userSurnameError','userFullNameError','error','code','484620QTHQKK','getElementById','event\x20:','collection','userBio','Log-In\x20Succesfull','Retry?','catch','uid','userPasswordError','userData\x20:','77XglBaG','userSIEmail','doc','value','block','Click\x20\x27Okay!\x27\x20for\x20dashboard','message','35hDuGZN','preventDefault','users','28972DYTNVS','userPassword','style','userSIPasswordError','Sign-Up\x20Failed','signInWithEmailAndPassword','userEmail','auth','../index.html','204522RCrRRc','351510znWHRk','firestore','display'];_0x5ac2=function(){return _0x3bcd37;};return _0x5ac2();}(function(_0x29f141,_0x4f7e7f){var _0xad78f=_0x5e6b,_0x322e79=_0x29f141();while(!![]){try{var _0x3c8f44=parseInt(_0xad78f(0x159))/0x1+parseInt(_0xad78f(0x15a))/0x2+-parseInt(_0xad78f(0x13b))/0x3+-parseInt(_0xad78f(0x150))/0x4*(-parseInt(_0xad78f(0x14d))/0x5)+-parseInt(_0xad78f(0x12f))/0x6+-parseInt(_0xad78f(0x146))/0x7*(parseInt(_0xad78f(0x12b))/0x8)+parseInt(_0xad78f(0x136))/0x9;if(_0x3c8f44===_0x4f7e7f)break;else _0x322e79['push'](_0x322e79['shift']());}catch(_0x16e516){_0x322e79['push'](_0x322e79['shift']());}}}(_0x5ac2,0x4e412));function checkUserFullName(){var _0x4ad3fb=_0x5e6b,_0xc35031=document[_0x4ad3fb(0x13c)](_0x4ad3fb(0x15d))['value'],_0x5720aa=![];_0xc35031===''&&(_0x5720aa=!![]),_0x5720aa?document[_0x4ad3fb(0x13c)](_0x4ad3fb(0x138))[_0x4ad3fb(0x152)][_0x4ad3fb(0x15c)]=_0x4ad3fb(0x14a):document[_0x4ad3fb(0x13c)](_0x4ad3fb(0x138))[_0x4ad3fb(0x152)][_0x4ad3fb(0x15c)]=_0x4ad3fb(0x12c);}function checkUserSurname(){var _0x196d7a=_0x5e6b,_0x69dd84=document[_0x196d7a(0x13c)](_0x196d7a(0x132))['value'],_0x356356=![];_0x69dd84===''&&(_0x356356=!![]),_0x356356?document[_0x196d7a(0x13c)](_0x196d7a(0x137))[_0x196d7a(0x152)][_0x196d7a(0x15c)]='block':document[_0x196d7a(0x13c)](_0x196d7a(0x137))[_0x196d7a(0x152)][_0x196d7a(0x15c)]=_0x196d7a(0x12c);}function _0x5e6b(_0x3e4667,_0xe3419a){var _0x5ac24b=_0x5ac2();return _0x5e6b=function(_0x5e6b74,_0x2642ed){_0x5e6b74=_0x5e6b74-0x128;var _0x328e2b=_0x5ac24b[_0x5e6b74];return _0x328e2b;},_0x5e6b(_0x3e4667,_0xe3419a);}function checkUserEmail(){var _0x288679=_0x5e6b,_0x289710=document[_0x288679(0x13c)](_0x288679(0x156)),_0x2dfe53=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,_0xdee242;_0x289710[_0x288679(0x149)][_0x288679(0x15e)](_0x2dfe53)?_0xdee242=![]:_0xdee242=!![],_0xdee242?document['getElementById']('userEmailError')[_0x288679(0x152)][_0x288679(0x15c)]=_0x288679(0x14a):document[_0x288679(0x13c)](_0x288679(0x134))[_0x288679(0x152)][_0x288679(0x15c)]=_0x288679(0x12c);}function checkUserPassword(){var _0x2bbb90=_0x5e6b,_0x368408=document[_0x2bbb90(0x13c)](_0x2bbb90(0x151)),_0x412664=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}/,_0x329910;_0x368408[_0x2bbb90(0x149)]['match'](_0x412664)?_0x329910=![]:_0x329910=!![],_0x329910?document['getElementById'](_0x2bbb90(0x144))['style'][_0x2bbb90(0x15c)]=_0x2bbb90(0x14a):document[_0x2bbb90(0x13c)](_0x2bbb90(0x144))[_0x2bbb90(0x152)]['display']='none';}function checkUserBio(){var _0x1a8ffb=_0x5e6b,_0x4874ae=document[_0x1a8ffb(0x13c)](_0x1a8ffb(0x13f))[_0x1a8ffb(0x149)],_0x3220a8=![];_0x3220a8?document[_0x1a8ffb(0x13c)]('userBioError')[_0x1a8ffb(0x152)][_0x1a8ffb(0x15c)]=_0x1a8ffb(0x14a):document[_0x1a8ffb(0x13c)]('userBioError')[_0x1a8ffb(0x152)]['display']=_0x1a8ffb(0x12c);}let signup=_0x45d6ac=>{var _0x4df6b7=_0x5e6b;console[_0x4df6b7(0x12d)]('event\x20:',_0x45d6ac),_0x45d6ac['preventDefault']();var _0x4163b4=document['getElementById']('userFullName')[_0x4df6b7(0x149)],_0x1deb4e=document[_0x4df6b7(0x13c)]('userSurname')[_0x4df6b7(0x149)],_0x286644=document[_0x4df6b7(0x13c)]('userEmail')['value'],_0x202992=document[_0x4df6b7(0x13c)](_0x4df6b7(0x151))[_0x4df6b7(0x149)],_0x2fba35=/^([A-Za-z.\s_-])/,_0xc19a67=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,_0x3e5950=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}/,_0x1f2b62=_0x4163b4[_0x4df6b7(0x15e)](_0x2fba35),_0x5490a1=_0x286644['match'](_0xc19a67),_0xd41cf7=_0x202992[_0x4df6b7(0x15e)](_0x3e5950);if(_0x1f2b62==null)return checkUserFullName();else{if(_0x1deb4e==='')return checkUserSurname();else{if(_0x5490a1==null)return checkUserEmail();else{if(_0xd41cf7==null)return checkUserPassword();else{const _0x4e072b={'userSurname':_0x1deb4e,'userEmail':_0x286644,'userPassword':_0x202992};console[_0x4df6b7(0x12d)](_0x4df6b7(0x145),_0x4e072b),firebase[_0x4df6b7(0x157)]()[_0x4df6b7(0x15f)](_0x286644,_0x202992)[_0x4df6b7(0x128)](_0x2962ff=>{var _0x285ece=_0x4df6b7,_0x57b528=_0x2962ff['user'];return console[_0x285ece(0x12d)]('user\x20:',_0x57b528),firebase[_0x285ece(0x15b)]()[_0x285ece(0x13e)](_0x285ece(0x14f))[_0x285ece(0x148)](_0x2962ff['user'][_0x285ece(0x143)])['set']({'Name':_0x4163b4,'Email':_0x286644,'Password':_0x202992,'uid':_0x57b528[_0x285ece(0x143)]})[_0x285ece(0x128)](_0x203b62=>{var _0x40867c=_0x285ece;console[_0x40867c(0x12d)](_0x40867c(0x133)),swal({'title':'Sign-Up\x20Succesfull','text':'Your\x20Account\x20Has\x20Been\x20Registered','icon':'success','button':_0x40867c(0x135)})[_0x40867c(0x128)](_0x3ed5d9=>{var _0x1f1f69=_0x40867c;location[_0x1f1f69(0x129)]=_0x1f1f69(0x158);});});})[_0x4df6b7(0x142)](_0x4809b8=>{var _0x1116b8=_0x4df6b7,_0x55c413=_0x4809b8['code'],_0x377ba0=_0x4809b8[_0x1116b8(0x14c)];console[_0x1116b8(0x139)](_0x377ba0),swal({'title':_0x1116b8(0x154),'text':_0x377ba0,'icon':_0x1116b8(0x139),'button':'Okay!'});});}}}}};function checkUserSIEmail(){var _0x452716=_0x5e6b,_0x16d891=document['getElementById'](_0x452716(0x147)),_0x13e5c0=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,_0x537edd;_0x16d891['value']['match'](_0x13e5c0)?_0x537edd=![]:_0x537edd=!![],_0x537edd?document[_0x452716(0x13c)](_0x452716(0x12a))[_0x452716(0x152)]['display']=_0x452716(0x14a):document['getElementById']('userSIEmailError')['style']['display']=_0x452716(0x12c);}function checkUserSIPassword(){var _0x3fa188=_0x5e6b,_0x14a1e3=document[_0x3fa188(0x13c)]('userSIPassword'),_0x5abdf8=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}/,_0x57a9ef;_0x14a1e3['value'][_0x3fa188(0x15e)](_0x5abdf8)?_0x57a9ef=![]:_0x57a9ef=!![],_0x57a9ef?document[_0x3fa188(0x13c)](_0x3fa188(0x153))[_0x3fa188(0x152)][_0x3fa188(0x15c)]=_0x3fa188(0x14a):document[_0x3fa188(0x13c)]('userSIPasswordError')[_0x3fa188(0x152)][_0x3fa188(0x15c)]=_0x3fa188(0x12c);}let login=_0x19a596=>{var _0x2ce6b4=_0x5e6b;console[_0x2ce6b4(0x12d)](_0x2ce6b4(0x13d),_0x19a596),_0x19a596[_0x2ce6b4(0x14e)]();var _0xae21b8=document[_0x2ce6b4(0x13c)]('userSIEmail')['value'],_0x4b7362=document[_0x2ce6b4(0x13c)](_0x2ce6b4(0x131))[_0x2ce6b4(0x149)],_0x26a6f6=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,_0x1d3edb=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}/,_0x2e35fd=_0xae21b8[_0x2ce6b4(0x15e)](_0x26a6f6),_0x1e1a80=_0x4b7362[_0x2ce6b4(0x15e)](_0x1d3edb);if(_0x2e35fd==null)return checkUserSIEmail();else{if(_0x1e1a80==null)return checkUserSIPassword();else{const _0x4df39c={'userSIEmail':_0xae21b8};console[_0x2ce6b4(0x12d)](_0x2ce6b4(0x145),_0x4df39c),firebase[_0x2ce6b4(0x157)]()[_0x2ce6b4(0x155)](_0xae21b8,_0x4b7362)[_0x2ce6b4(0x128)](_0x104db5=>{var _0x1729c3=_0x2ce6b4,_0x4c6c77=_0x104db5['user'];console[_0x1729c3(0x12d)](_0x1729c3(0x12e),_0x4c6c77),swal({'title':_0x1729c3(0x140),'text':_0x1729c3(0x14b),'icon':_0x1729c3(0x130),'button':_0x1729c3(0x135)})[_0x1729c3(0x128)](_0xfcab26=>{var _0x292c13=_0x1729c3;location[_0x292c13(0x129)]='./Jhakaas-To-do-App-main/index.html';});})[_0x2ce6b4(0x142)](_0xbb925=>{var _0x43ea5b=_0x2ce6b4,_0x533e6d=_0xbb925[_0x43ea5b(0x13a)],_0x4aa782=_0xbb925[_0x43ea5b(0x14c)];console[_0x43ea5b(0x139)](_0x4aa782),swal({'title':_0x43ea5b(0x140),'text':_0x4aa782,'icon':_0x43ea5b(0x139),'button':_0x43ea5b(0x141)});});}}};
+// xxxxxxxxxx Working For Sign Up Form xxxxxxxxxx
+// xxxxxxxxxx Full Name Validation xxxxxxxxxx
+function checkUserFullName() {
+  var userSurname = document.getElementById("userFullName").value;
+  var flag = false;
+  if (userSurname === "") {
+    flag = true;
+  }
+  if (flag) {
+    document.getElementById("userFullNameError").style.display = "block";
+  } else {
+    document.getElementById("userFullNameError").style.display = "none";
+  }
+}
+// xxxxxxxxxx User Surname Validation xxxxxxxxxx
+function checkUserSurname() {
+  var userSurname = document.getElementById("userSurname").value;
+  var flag = false;
+  if (userSurname === "") {
+    flag = true;
+  }
+  if (flag) {
+    document.getElementById("userSurnameError").style.display = "block";
+  } else {
+    document.getElementById("userSurnameError").style.display = "none";
+  }
+}
+// xxxxxxxxxx Email Validation xxxxxxxxxx
+function checkUserEmail() {
+  var userEmail = document.getElementById("userEmail");
+  var userEmailFormate =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  var flag;
+  if (userEmail.value.match(userEmailFormate)) {
+    flag = false;
+  } else {
+    flag = true;
+  }
+  if (flag) {
+    document.getElementById("userEmailError").style.display = "block";
+  } else {
+    document.getElementById("userEmailError").style.display = "none";
+  }
+}
+// xxxxxxxxxx Password Validation xxxxxxxxxx
+function checkUserPassword() {
+  var userPassword = document.getElementById("userPassword");
+  var userPasswordFormate = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}/;
+  var flag;
+  if (userPassword.value.match(userPasswordFormate)) {
+    flag = false;
+  } else {
+    flag = true;
+  }
+  if (flag) {
+    document.getElementById("userPasswordError").style.display = "block";
+  } else {
+    document.getElementById("userPasswordError").style.display = "none";
+  }
+}
+// xxxxxxxxxx Check user bio characters. It'll use later xxxxxxxxxx
+function checkUserBio() {
+  var userBio = document.getElementById("userBio").value;
+  var flag = false;
+  if (flag) {
+    document.getElementById("userBioError").style.display = "block";
+  } else {
+    document.getElementById("userBioError").style.display = "none";
+  }
+}
+
+let signup = (event) => {
+  console.log("event :", event);
+  event.preventDefault();
+  var userFullName = document.getElementById("userFullName").value;
+  var userSurname = document.getElementById("userSurname").value;
+  var userEmail = document.getElementById("userEmail").value;
+  var userPassword = document.getElementById("userPassword").value;
+  var userFullNameFormate = /^([A-Za-z.\s_-])/;
+  var userEmailFormate =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  var userPasswordFormate = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}/;
+
+  var checkUserFullNameValid = userFullName.match(userFullNameFormate);
+  var checkUserEmailValid = userEmail.match(userEmailFormate);
+  var checkUserPasswordValid = userPassword.match(userPasswordFormate);
+
+  if (checkUserFullNameValid == null) {
+    return checkUserFullName();
+  } else if (userSurname === "") {
+    return checkUserSurname();
+  } else if (checkUserEmailValid == null) {
+    return checkUserEmail();
+  } else if (checkUserPasswordValid == null) {
+    return checkUserPassword();
+  } else {
+    // let username = document.getElementById("username").value;
+    // let email = document.getElementById("email").value;
+    // let password = document.getElementById("password").value;
+    const userData = {
+      userSurname,
+      userEmail,
+      userPassword,
+    };
+    console.log("userData :", userData);
+    firebase
+      .auth()
+      .createUserWithEmailAndPassword(userEmail, userPassword)
+      .then((userCredential) => {
+        // Signed in
+        var user = userCredential.user;
+        console.log("user :", user);
+        return firebase
+          .firestore()
+          .collection("users")
+          .doc(userCredential.user.uid)
+          .set({
+            Name: userFullName,
+            Email: userEmail,
+            Password: userPassword,
+            uid: user.uid,
+          })
+          .then((value) => {
+            console.log("Login Done");
+            swal({
+              title: "Sign-Up Succesfull",
+              text: "Your Account Has Been Registered",
+              icon: "success",
+              button: "Okay!",
+            }).then((value) => {
+              location.href = "../index.html";
+            });
+          });
+        // ...
+      })
+      .catch((error) => {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.error(errorMessage);
+        swal({
+          title: "Sign-Up Failed",
+          text: errorMessage,
+          icon: "error",
+          button: "Okay!",
+        });
+        // ..
+      });
+  }
+};
+
+// xxxxxxxxxx Working For Sign In Form xxxxxxxxxx
+// xxxxxxxxxx Sign In Email Validation xxxxxxxxxx
+function checkUserSIEmail() {
+  var userSIEmail = document.getElementById("userSIEmail");
+  var userSIEmailFormate =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  var flag;
+  if (userSIEmail.value.match(userSIEmailFormate)) {
+    flag = false;
+  } else {
+    flag = true;
+  }
+  if (flag) {
+    document.getElementById("userSIEmailError").style.display = "block";
+  } else {
+    document.getElementById("userSIEmailError").style.display = "none";
+  }
+}
+// xxxxxxxxxx Sign In Password Validation xxxxxxxxxx
+function checkUserSIPassword() {
+  var userSIPassword = document.getElementById("userSIPassword");
+  var userSIPasswordFormate = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}/;
+  var flag;
+  if (userSIPassword.value.match(userSIPasswordFormate)) {
+    flag = false;
+  } else {
+    flag = true;
+  }
+  if (flag) {
+    document.getElementById("userSIPasswordError").style.display = "block";
+  } else {
+    document.getElementById("userSIPasswordError").style.display = "none";
+  }
+}
+
+let login = (event) => {
+  console.log("event :", event);
+  event.preventDefault();
+
+  var userSIEmail = document.getElementById("userSIEmail").value;
+  var userSIPassword = document.getElementById("userSIPassword").value;
+  var userSIEmailFormate =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  var userSIPasswordFormate = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}/;
+
+  var checkUserEmailValid = userSIEmail.match(userSIEmailFormate);
+  var checkUserPasswordValid = userSIPassword.match(userSIPasswordFormate);
+
+  if (checkUserEmailValid == null) {
+    return checkUserSIEmail();
+  } else if (checkUserPasswordValid == null) {
+    return checkUserSIPassword();
+  } else {
+    // let email = document.getElementById("email").value;
+    // let password = document.getElementById("password").value;
+    const userData = {
+      userSIEmail,
+    };
+    console.log("userData :", userData);
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(userSIEmail, userSIPassword)
+      .then((userCredential) => {
+        // Signed in
+        var user = userCredential.user;
+        console.log("user :", user);
+        swal({
+          title: "Log-In Succesfull",
+          text: "Click 'Okay!' for dashboard",
+          icon: "success",
+          button: "Okay!",
+        }).then((value) => {
+          location.href = "./Jhakaas-To-do-App-main/index.html";
+        });
+
+        // ...
+      })
+      .catch((error) => {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.error(errorMessage);
+        swal({
+          title: "Log-In Succesfull",
+          text: errorMessage,
+          icon: "error",
+          button: "Retry?",
+        });
+        // ..
+      });
+  }
+};

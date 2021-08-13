@@ -37,7 +37,18 @@
     <!--  -->
 
     <div class="heading">
-      <h1>Welcome, to Jhakaas To-do App 3.0 Mr.<span id="username"></span></h1>
+      <h2>Welcome, to Jhakaas To-do App 3.0 &nbsp; &nbsp; &nbsp; &nbsp; Mr.<span id="username"></span></h2>
+      <div class="off-todo">
+        <button
+          id="Reset"
+          type="button"
+          class="btn btn-outline-success btn-rounded waves-effect"
+        style="font-size: 18px"
+          onclick="return logout()"
+        >
+          logout
+        </button>
+      </div>
     </div>
     <div class="form">
       <div class="form-group">
@@ -45,35 +56,39 @@
         <input
           type="text"
           class="form-control"
-          id="title"
+          id="get-title"
           aria-describedby="emailHelp"
         />
       </div>
       <div class="form-group">
         <label for="description">Description</label>
-        <textarea class="form-control" id="description" rows="3"></textarea>
+        <textarea class="form-control" id="text-feild" rows="3"></textarea>
       </div>
       <button
         type="submit"
         id="additem"
         class="btn btn-outline-success btn-rounded waves-effect"
         style="font-size: 18px"
+        onclick="return addTodo(event)""
       >
         Add item &nbsp; &nbsp;<i class="fas fa-plus-square pr-2"></i>
       </button>
+      <button class="btn btn-outline-danger btn-rounded waves-effect"
+      style="font-size: 18px" onclick="return clear() ">Clear</button>
     </div>
 
     <table class="table">
       <thead>
         <tr>
-          <th scope="col">S.no</th>
+          <th scope="col">S.No</th>
           <th scope="col">Task</th>
           <th scope="col">Description</th>
-          <th scope="col"></th>
+          <th scope="col">Date</th>
+          <th scope="col">&nbsp;</th>
         </tr>
       </thead>
-      <tbody id="tableBody">
-        <tr>
+      <tbody id="table-body">
+        <!-- <tr>
           <th scope="row">1</th>
           <td>Task</td>
           <td>Description</td>
@@ -86,7 +101,7 @@
               Delete &nbsp; &nbsp;<i class="fas fa-trash pr-2"></i>
             </button>
           </td>
-        </tr>
+        </tr> -->
       </tbody>
     </table>
 
@@ -128,6 +143,5 @@
 
     <script src="java.js"></script>
     <script src="../js/app.js"></script>
-    <a href=""></a>
   </body>
 </html>
